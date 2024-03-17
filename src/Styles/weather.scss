@@ -27,6 +27,7 @@
         flex-direction: column;
         position: relative;
         z-index: 10;
+        padding: 20px;
         border: 1px solid rgb(50, 50, 50);
         border-radius: 5px;
         box-shadow: 5px 5px 15px rgb(50, 50, 50);
@@ -83,10 +84,20 @@
 }
 
 @media only screen and (max-width: 450px) {
-    .container > .weather-container > .searchField > button {
-        width: 80px;
-        letter-spacing: .5px;
-        font-weight: 500;
+    .container > .weather-container > .searchField {
+        flex-direction: column;
+        align-items: center;
+
+        > input {
+            width: 100%;
+        }
+
+        > button {
+            width: 80px;
+            letter-spacing: .5px;
+            font-weight: 500;
+            border-radius: 25px;
+        } 
     }
     .container > .weather-container > .weather {
         flex-direction: column;
